@@ -1,0 +1,145 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /** Colors **/
+
+  /* primary */
+
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-cyan-500: hsl(184, 100%, 22%);
+  --clr-cyan-800: hsl(179, 100%, 13%);
+
+  /*neutral */
+
+  --clr-text-200: hsla(0, 0%, 100%, 0.75);
+  --clr-title-200: hsl(0, 0%, 95%);
+
+  /* TYPOGRAPHY */
+
+  --ff-title: "Big Shoulders Display", sans-serif;
+
+  --ff-para: "Lexend Deca", sans-serif;
+
+  --fw-lt: 300;
+  --fw-reg: 400;
+  --fw-heavy: 700;
+
+  /** SPACING **/
+  --martop-1: 1em;
+  --martop-2: 3em;
+  --marbtm-1: 1em;
+  --marbtm-2: 1.5em;
+}
+
+/**  UTILITY CLASSES **/
+
+.btn {
+  padding: 1em 3em;
+  border: none;
+  border-radius: 10em;
+  margin-top: var(--martop-2);
+}
+
+.btn-1 {
+  color: var(--clr-bright-orange);
+}
+
+.btn-2 {
+  color: var(--clr-cyan-500);
+}
+
+.btn-3 {
+  color: var(--clr-cyan-800);
+}
+
+.wrapper {
+  width: 80%;
+  min-width: 300px;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-text-200);
+  font-family: var(--ff-par);
+  font-size: 0.875rem;
+}
+
+.card__box {
+  padding: 2.4rem;
+  line-height: 1.6;
+  width: 18rem;
+}
+
+.icon {
+  margin-bottom: var(--marbtm-2);
+}
+
+h2 {
+  font-family: var(--ff-title);
+  color: var(--clr-title-200);
+  font-size: 2.25rem;
+  font-weight: var(--fw-lt);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--ff-para);
+  margin-top: var(--martop-2);
+  font-weight: var(--fw-lt);
+}
+
+.card__box-1 {
+  background-color: var(--clr-bright-orange);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__box-2 {
+  background-color: var(--clr-cyan-500);
+}
+
+.card__box-3 {
+  background-color: var(--clr-cyan-800);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    height: 450px;
+    flex-direction: row;
+    align-self: center;
+  }
+  .card__box {
+    width: 17rem;
+  }
+  .card__box-1 {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .card__box-3 {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .attribution {
+    font-size: 0.925rem;
+    margin-top: var(--martop-1);
+  }
+}

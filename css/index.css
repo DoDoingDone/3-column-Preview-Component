@@ -89,7 +89,7 @@
   margin-bottom: var(--marbtm-2);
 }
 
-h2 {
+h1, h2 {
   font-family: var(--ff-title);
   color: var(--clr-title-200);
   font-size: 2.25rem;
